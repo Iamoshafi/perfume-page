@@ -1,0 +1,118 @@
+
+:root{
+    /* ## Primary */
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --fs-700: 700;
+    --Cream: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --Family: (Montserrat);
+}
+body{
+    background-color: var(--Cream);
+}
+.container{
+    background-color: var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:90% ;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+.img-cont,.word-cont{
+    width: 50%;
+    height: 100%;
+}
+.header1{
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+} 
+.title{
+    width: 70%;
+    padding-left: 30px;
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+}
+.floral{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+    font-size: 13px;
+    padding-left: 30px;
+    width: 75%;
+}
+.price{
+    padding-left: 20px;
+    color: var(--Dark-cyan);
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Fraunces', serif;
+    padding-left: 30px;
+}
+span{
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 12px;
+}
+button{
+    padding-left: 30px;
+    border: none;
+    margin-left: 20px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 60px 15px 60px;
+    border-radius: 10px;
+}
+.img-cont{
+    border-radius: 10px 0 0 10px;
+}
+.img-cont img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+ 
+@media screen and (max-width:395px) {
+    .container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .img-cont,.word-cont{
+        width: 100%;
+    }
+    .img-cont img{
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    button{
+        margin-left: 30px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: var(--Dark-cyan);
+        color: var(--White);
+        font-family: 'Montserrat', sans-serif;
+        padding: 15px 60px 15px 60px;
+        border-radius: 10px;
+        width: 80%;
+    }
+   .title{
+    margin-top: -5px;
+   }
+   .floral{
+    padding-top: -40px;
+    font-size: 14px;
+   }
+}
