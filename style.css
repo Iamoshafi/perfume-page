@@ -84,7 +84,7 @@ button{
     border-radius: 10px 0 0 10px;
 }
  
-@media screen and (max-width:395px) {
+@media screen and (max-width:481px) {
     .container{
         flex-direction: column;
         width: 95%;
